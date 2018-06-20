@@ -1,6 +1,6 @@
 ## ProblemSet01
 
-1. Write a program that examines three variables—x, y, and z—
+1. Write a program that examines three variablesâ€”x, y, and zâ€”
 and prints the largest odd number among them. If none of them are odd, it
 should print a message to that effect.
 
@@ -76,15 +76,16 @@ low = 0.0
 high = max(1.0, x)
 ans = (high + low)/2.0
 while abs(ans**2 - x) >= epsilon:
-print 'low =', low, 'high =', high, 'ans =', ans
-numGuesses += 1
-if ans**2 < x:
-low = ans
-else:
-high = ans
-ans = (high + low)/2.0
-print 'numGuesses =', numGuesses
-print ans, 'is close to square root of', x
+	print 'low =', low, 'high =', high, 'ans =', ans
+	numGuesses += 1
+	if ans**2 < x:
+		low = ans
+	else:
+		high = ans
+		
+	ans = (high + low)/2.0
+	print 'numGuesses =', numGuesses
+	print ans, 'is close to square root of', x
 
 ```
 
